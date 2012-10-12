@@ -1,0 +1,127 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 14px;
+    font-weight: 200;
+    vertical-align: baseline;
+    font-family: verdana, sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    /*background-color:#EEEEEE;*/
+    height: 150px;
+    width: 250px;
+}
+
+select {
+    margin-top: 8px;
+    width: 215px;
+    max-width: 225px;
+    overflow: hidden;
+}
+
+h2#headerText {
+    font-size: 14px;
+    top: 0.25em;
+    left: 1em;
+    margin-top: 5px;
+    position: relative
+}
+
+#help{
+    margin-left: 45px;
+}
+
+.header {
+    color: white;
+    margin:5px 0 0 5px;
+    background: none repeat scroll 0 0 #003965;
+    border-radius: 4px 4px 0 0;
+    height: 20px;
+    text-align: left;
+    width: 92%;
+}
+
+.panel {
+    margin: 13px 5px;
+}
+
+.center {
+    text-align: center;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+#gotoBtn {
+    margin-top: 10px;
+}
+
+#ensemblAnchor{
+    display: none;
+    margin-left: 20px;
+    top: 5px;
+    position: relative;
+}
+
+#ensemblLogo{
+    height: 20px;
+    width: 20px;
+
+    -webkit-box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.15), 0px 2px 2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.15), 0px 2px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.15), 0px 2px 2px rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+#ensemblLogo:hover{
+    -webkit-box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45), 0px 2px 2px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45), 0px 2px 2px rgba(0, 0, 0, 0.35);
+    box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45), 0px 2px 2px rgba(0, 0, 0, 0.35);
+}
+
+#ensemblLogo:active { position: relative; top: 3px;
+    -webkit-box-shadow: inset 0px -3px 1px rgba(255, 255, 255, 1), inset 0 0px 3px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: inset 0px -3px 1px rgba(255, 255, 255, 1), inset 0 0px 3px rgba(0, 0, 0, 0.9);
+    box-shadow: inset 0px -3px 1px rgba(255, 255, 255, 1), inset 0 0px 3px rgba(0, 0, 0, 0.9);
+}

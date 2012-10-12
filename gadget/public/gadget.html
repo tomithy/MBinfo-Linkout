@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <script type="text/javascript" src="//storage.googleapis.com/static.mechanobio.info/gadget/js/jquery.js"></script>
+    <script type="text/javascript" src="//storage.googleapis.com/static.mechanobio.info/gadget/js/json2.js"></script>
+    <script type="text/javascript" src="//storage.googleapis.com/static.mechanobio.info/gadget/js/gadget.js"></script>
+    <link rel="stylesheet" type="text/css" href="//storage.googleapis.com/static.mechanobio.info/gadget/style/style.css" />
+</head>
+
+
+<body>
+    <div class="header">
+    <h2 id="headerText">MBInfo Linkout <span id="help" class="clickable" onclick="alert('The Linkout tool allows users to access additional information from external resources on genes, ' +
+     'as well as their homologs, that encode proteins discussed in MBInfo. The tool looks up HomoloGene in order to retrieve the homolog list for each gene, which performs ' +
+      'taxonomic tree-driven pairwise comparisons among all available sequences from its repositories of completely sequenced eukaryotic genomes. Sequence match-ups ' +
+       'relying on global alignment algorithms, defined by robust cut-offs, generate &quot true&quot homolog clusters. To access the relevant taxonomy-specific resource, ' +
+        'please select a gene homolog. ')">[Help]</span></h2>
+    </div>
+
+    <div class="panel">
+        <div class="mcmbTitle" title="notLoaded"><h4>Select a gene:</h4></div>
+        <select class="selector" id="MCMBGeneList" onchange="refreshHomologList();">
+        </select>
+    </div>
+
+    <div class="panel">
+        <h4>Select an information resource:</h4>
+        <select class="selector" id="HomologsList">
+        </select>
+    </div>
+
+    <div class="panel center">
+    <button id="gotoBtn" onclick="gotoResource();">Go to GMOD / resource!</button>
+    <a href="#" id="ensemblAnchor" onclick="gotoEnsemblResource();"><img id="ensemblLogo" src="//storage.googleapis.com/static.mechanobio.info/gadget/images/ensemblIcon.png"></a>
+    </div>
+
+</body>
+</html>
