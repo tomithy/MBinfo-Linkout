@@ -145,7 +145,7 @@ function setURLKey(json) {
     var urlKey = urlKeyList[pathname];
 //            urlKey = 0;
     if ( urlKey == undefined ) {
-//            console.log("Please preview in viewer and ensure that this page has a linked CSV file.");
+        console.warn('json file not found for ' + pathname);
     }
     urltoGeneJson = urltoGeneJson + urlKey + ".json";
 //        console.log("URL to gene Json:" +urltoGeneJson);
@@ -170,8 +170,7 @@ function getMCMBUrl() {
     var testSiteURL = url.slice(indexStart + subStringStart.length, indexEnd) + "/";
 
     //URL replacements
-    var specificURL = testSiteURL.replace("https://sites.google.com/a/blueprint.org/draft/Home/", "");  //replacing url slug for draft site
-    specificURL = specificURL.replace("https://sites.google.com/a/mechanobio.info/mbinfo/Home/", "");  //replacing url slug for production site
+    var specificURL = testSiteURL.replace(/https?:\/\/sites\.google\.com\/a\/mechanobio\.info\/\w+\/Home\//, "");  //replacing url slug for draft site
     specificURL = specificURL.replace("http://www.mechanobio.info/Home/", "" );  //replaces slug that appears on safari and chrome
 
     pathname = specificURL;
